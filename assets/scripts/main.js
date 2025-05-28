@@ -83,7 +83,7 @@ async function getRecipes() {
 
   const recipes = [];
 
-  return new Promises(async (resolvePlugin, reject) => {
+  return new Promise(async (resolvePlugin, reject) => {
     for (let i = 0; i < RECIPE_URLS.length; i++) {
       const url = RECIPE_URLS[i];
       try {
